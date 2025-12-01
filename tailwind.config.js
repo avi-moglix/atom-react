@@ -1,0 +1,208 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: 'class',
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  
+  theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1.25rem',
+        sm: '1.25rem',
+        md: '3rem',
+        lg: '3rem',
+        xl: '5rem',
+      }
+    },
+    screens: {
+      'sm': { 'min': '300px', 'max': '980px' },
+      'md': { 'min': '981px', 'max': '1239px' },
+      'lg': { 'min': '1240px' },
+      'xl': { 'min': '1600px' },
+      'xxl': { 'min': '1920px' },
+      'mobile': { 'max': '1199px' },
+      'desktop': { 'min': '1200px' },
+    },
+    extend: {
+      flex: {
+        '3': '0 0 25%',
+        '4': '0 0 33.33%',
+        '6': '0 0 50%',
+        '12': '0 0 100%'
+      },
+
+      rounded:{
+        'atom-sm': '4px',
+        'atom-badges':'16px'
+      },
+
+      spacing: {
+        'px': '1px',
+        '0.5':'2px',
+        '1': '4px',
+        '1.5':'6px',
+        '2': '8px',
+        '2.5': '10px',
+        '3': '12px',
+        '3.5': '14px',
+        '4': '16px',
+        '5': '20px',
+        '6': '24px',
+        '7': '28px',
+        '8':'32px',
+        '9':'36px',
+        '10':'40px',
+        '11':'44px',
+        '12':'48px',
+        '14':'56px',
+        '16':'64px',
+        '20':'80px',
+        '24':'96px',
+        '28':'112px',
+        '32':'128px',
+        '36':'144px',
+        '40':'160px',
+        '44':'176px',
+        '48':'192px',
+        '52':'208px',
+      },
+      boxShadow: {
+        'sm':'0 8px 20px rgba(0, 0, 0, 0.16)',
+        'normal': '0 3px 15px rgba(0, 0, 0, 0.06)',
+        'xl': '0px 10px 50px rgba(0, 0, 0, 0.16)',
+        'icon-btn-shadow' : '0px 3px 10px #00000029;',
+      },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+        'pulse-new': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) 2s;'
+      },
+      fontSize: {
+        xxs:['11px','16px'],
+        xs: ['12px', '18px'],
+        sm: ['14px', '20px'],
+        base: ['16px', '24px'],
+        lg: ['18px', '26px'],
+        xl: ['20px', '28px'],
+        xxl: ['24px', '32px'],
+        xxxl:['30px', '40px'],
+        fourxl:['36px', '46px'],
+        fivexl: ['48px', '72px'],
+        sixxl: ['60px', '90px'],
+        sevenxl: ['72px', '108px'],
+        eightxl: ['96px', '140px'],
+      },
+      colors: {
+        atom_rojored:'#D9232D',
+        atom_indianred:'#E14F57',
+        atom_salmonpink:'#EC9196',
+        atom_mistyrose:'#FAE0E1',
+        atom_snowred:'#FFF7F7',
+        atom_harvestgold:'#E3A003',
+        atom_sunglow:'#FECC2F',
+        atom_peachyellow:'#F4D99A',
+        atom_papayawhip:'#F9ECCD',
+        atom_papayawhiplight:'#FFFAED',
+        atom_barkeleyblue:'#072F5F',
+        atom_indigodye:'#20446F',
+        atom_antiflashwhite:'#E6EAEF',
+        atom_onxyblack:'#3c3c3c',
+        atom_dimgray:'#6F6F6F',
+        atom_battleshipgray:'#979797',
+        atom_silver:'#C4C4C4',
+        atom_ghostwhite:'#EFEFF4',
+        atom_pantoneorange:'#F5681D',
+        atom_Crayolaorange:'#F7864B',
+        atom_peachorange:'#FAB48F',
+        atom_champagnepink:'#FFEBE0',
+        atom_seashell:'#FEF4EF',
+        atom_officegreen:'#0A7205',
+        atom_forestgreen:'#4A9447',
+        atom_cambridgegreen:'#8DB68B',
+        atom_nyanzagreen:'#DFFDDF',
+        atom_honeydew:'#F0FFF0',
+        atom_shamrockgreen:'#059A6D',
+        atom_mintgreen:'#52B898',
+        atom_tiffanygreen:'#9CD6C4',
+        atom_creamgreen:'#E5F5F0',
+        atom_mintcream:'#F5FFFC',
+        atom_celticblue:'#086AC9',
+        atom_bleudefrance:'#288BED',
+        atom_jordyblue:'#9CC2E9',
+        atom_aliceblue:'#DBEDFF',
+        atom_lightblue:'#F0F7FF',
+        atom_platinumgrey:'#D7D7DC',
+        atom_seasaltwhite:'#F9F9FB',
+        atom_white:'#FFF',
+        atom_primarydarkblack:'#000',
+        atom_secondarydarkblack:'#1A1A1A',
+        atom_graybg:'#fafafa',
+        atom_BerKeleyBlue: '#022B5C',
+        atom_BondiBlue: '#1F8FB2',
+        atom_secondary:'#3c3c3c',
+        atom_subHeaderBg:'#F5F5F5',
+        productBg:'#F7F7F7',
+        atom_green:'#458D00',
+        atom_arrowBg:'#E2FAFF',
+        black: {
+          200: '#f1f1f1',
+        },
+      },
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'],
+        serif:['Rubik', 'sans-serif']
+      },
+      fontWeight: {
+        thin:100,
+        extralight:200,
+        light: 300,
+        regular: 400,
+        medium: 500,
+        semibold: 600,
+        bold: 700,
+        extrabold: 800,
+      },
+      gridTemplateColumns: {
+        '2': 'repeat(2, minmax(0, 1fr))',
+        '3': 'repeat(3, minmax(0, 1fr))',
+        '4': 'repeat(4, minmax(0, 1fr))',
+        '5': 'repeat(5, minmax(0, 1fr))',
+        '6': 'repeat(6, minmax(0, 1fr))',
+      },
+  
+      gridColumn: {
+        'span-2': 'span 2 / span 2',
+        'span-3': 'span 3 / span 3',
+        'span-4': 'span 4 / span 4',
+        'span-5': 'span 5 / span 5',
+        'span-6': 'span 6 / span 6',
+      },
+    },
+  },
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        '.container': {
+          maxWidth: '100%',
+          '@screen sm': {
+            maxWidth: '728px',
+          },
+          '@screen md': {
+            maxWidth: '90%',
+          },
+          '@screen lg': {
+            maxWidth: '1280px',
+          },         
+        }
+      })
+    },
+    require("@tailwindcss/forms")({
+      strategy: 'base',
+    }),
+    require('tailwind-scrollbar')({ nocompatible: true }),
+    require('@tailwindcss/typography'),
+  ],
+}

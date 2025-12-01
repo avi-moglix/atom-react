@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1285" height="179" viewBox="0 0 1285 179">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="1285" height="89" fill="none"/>
+    </clipPath>
+    <filter id="content" x="0" y="45" width="338" height="112" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.078"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="content-2" x="324" y="45" width="338" height="112" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-opacity="0.078"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="content-3" x="648" y="45" width="338" height="112" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-3"/>
+      <feFlood flood-opacity="0.078"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="content-4" x="972" y="45" width="338" height="112" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-4"/>
+      <feFlood flood-opacity="0.078"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_129430" data-name="Group 129430" transform="translate(-17 -295)">
+    <g id="grid" transform="translate(-118 295)">
+      <rect id="column" width="92" height="179" transform="translate(140)" fill="rgba(255,34,161,0.1)"/>
+      <rect id="column-2" data-name="column" width="92" height="179" transform="translate(248)" fill="rgba(255,34,161,0.1)"/>
+      <rect id="column-3" data-name="column" width="92" height="179" transform="translate(356)" fill="rgba(255,34,161,0.1)"/>
+      <rect id="column-4" data-name="column" width="92" height="179" transform="translate(464)" fill="rgba(255,34,161,0.1)"/>
+      <rect id="column-5" data-name="column" width="92" height="179" transform="translate(572)" fill="rgba(255,34,161,0.1)"/>
+      <rect id="column-6" data-name="column" width="92" height="179" transform="translate(680)" fill="rgba(255,34,161,0.1)"/>
+      <rect id="column-7" data-name="column" width="92" height="179" transform="translate(788)" fill="rgba(255,34,161,0.1)"/>
+      <rect id="column-8" data-name="column" width="92" height="179" transform="translate(896)" fill="rgba(255,34,161,0.1)"/>
+      <rect id="column-9" data-name="column" width="92" height="179" transform="translate(1004)" fill="rgba(255,34,161,0.1)"/>
+      <rect id="column-10" data-name="column" width="92" height="179" transform="translate(1112)" fill="rgba(255,34,161,0.1)"/>
+      <rect id="column-11" data-name="column" width="92" height="179" transform="translate(1220)" fill="rgba(255,34,161,0.1)"/>
+      <rect id="column-12" data-name="column" width="92" height="179" transform="translate(1328)" fill="rgba(255,34,161,0.1)"/>
+    </g>
+    <g id="_3_grid" data-name="3 grid" transform="translate(17 340)" clip-path="url(#clip-path)">
+      <g transform="translate(-17 -327)">
+        <g transform="matrix(1, 0, 0, 1, 17, 282)" filter="url(#content)">
+          <g id="content-5" data-name="content" transform="translate(5 50)" fill="none" stroke="#d7242d" stroke-width="2">
+            <rect width="308" height="82" rx="10" stroke="none"/>
+            <rect x="1" y="1" width="306" height="80" rx="9" fill="none"/>
+          </g>
+        </g>
+        <text id="_3_columns" data-name="3 columns" transform="translate(121 382)" fill="#3a3a3a" font-size="24" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">3 columns</tspan></text>
+      </g>
+      <g transform="translate(307 -327)">
+        <g transform="matrix(1, 0, 0, 1, -307, 282)" filter="url(#content-2)">
+          <g id="content-6" data-name="content" transform="translate(329 50)" fill="none" stroke="#d7242d" stroke-width="2">
+            <rect width="308" height="82" rx="10" stroke="none"/>
+            <rect x="1" y="1" width="306" height="80" rx="9" fill="none"/>
+          </g>
+        </g>
+        <text id="_3_columns-2" data-name="3 columns" transform="translate(121 382)" fill="#3a3a3a" font-size="24" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">3 columns</tspan></text>
+      </g>
+      <g transform="translate(631 -327)">
+        <g transform="matrix(1, 0, 0, 1, -631, 282)" filter="url(#content-3)">
+          <g id="content-7" data-name="content" transform="translate(653 50)" fill="none" stroke="#d7242d" stroke-width="2">
+            <rect width="308" height="82" rx="10" stroke="none"/>
+            <rect x="1" y="1" width="306" height="80" rx="9" fill="none"/>
+          </g>
+        </g>
+        <text id="_3_columns-3" data-name="3 columns" transform="translate(121 382)" fill="#3a3a3a" font-size="24" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">3 columns</tspan></text>
+      </g>
+      <g transform="translate(955 -327)">
+        <g transform="matrix(1, 0, 0, 1, -955, 282)" filter="url(#content-4)">
+          <g id="content-8" data-name="content" transform="translate(977 50)" fill="none" stroke="#d7242d" stroke-width="2">
+            <rect width="308" height="82" rx="10" stroke="none"/>
+            <rect x="1" y="1" width="306" height="80" rx="9" fill="none"/>
+          </g>
+        </g>
+        <text id="_3_columns-4" data-name="3 columns" transform="translate(121 382)" fill="#3a3a3a" font-size="24" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">3 columns</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
