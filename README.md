@@ -1,17 +1,19 @@
-# Atom Design - React Native Components Documentation
+# Atom Design - Component Documentation
 
-A Next.js documentation site for Atom Design React Native UI components.
+A Next.js documentation site for Atom Design UI components, featuring both **React Native** and **React Web** component libraries.
 
 ## ✨ Features
 
-- 📱 **15 React Native Components** - Fully documented with live demos
+- 📱 **15 React Native Components** - Mobile UI components with Expo Snack demos
+- 🌐 **12+ React Web Components** - Web UI components with Tailwind CSS
 - 🌙 **Dark Mode** - Full dark mode support with system preference detection
 - ⌨️ **Keyboard Shortcuts** - `Cmd/Ctrl + K` for search focus
 - ♿ **Accessible** - ARIA labels, skip links, semantic HTML
 - 📱 **Responsive** - Mobile-first design that works on all devices
-- 🔍 **Search** - Fuzzy search with keyword matching
-- 📋 **Copy to Clipboard** - One-click code copying
-- 🎮 **Live Demos** - Expo Snack embeds with lazy loading
+- 🔍 **Search** - Fuzzy search with platform filtering (Web/Native)
+- 📋 **Copy to Clipboard** - One-click code copying with syntax highlighting
+- 🎮 **Live Demos** - Expo Snack embeds for Native, inline previews for Web
+- 🎨 **Code Showcase** - Toggle between JSX and HTML code views
 
 ## 🚀 Getting Started
 
@@ -56,10 +58,10 @@ atom-native-docs/
 ├── components/
 │   ├── layout/
 │   │   ├── Header.js           # Top navigation bar with search
-│   │   └── Sidebar.js          # Left sidebar navigation
+│   │   └── Sidebar.js          # Left sidebar with platform toggle
 │   ├── reusable/
 │   │   ├── Breadcrumb.js       # Page breadcrumb banner
-│   │   ├── CodeBlock.js        # Syntax-highlighted code display
+│   │   ├── CodeBlock.js        # Syntax-highlighted code + ComponentShowcase
 │   │   ├── ErrorBoundary.js    # Error boundary component
 │   │   ├── InstallBanner.js    # npm/yarn install commands
 │   │   ├── PropsTable.js       # Component props table
@@ -67,14 +69,17 @@ atom-native-docs/
 │   │   ├── SnackEmbed.js       # Lazy-loaded Expo Snack embed
 │   │   └── Tooltip.js          # Hover tooltip
 │   └── templates/
-│       └── ComponentDoc.js     # Reusable component doc template
+│       ├── ComponentDoc.js     # React Native component doc template
+│       └── WebComponentDoc.js  # React Web component doc template
 ├── context/
 │   └── ThemeContext.js         # Dark mode context provider
 ├── data/
-│   ├── componentsData.js       # All component metadata & props
-│   └── searchData.js           # Search index with keywords
+│   ├── componentsData.js       # React Native component metadata
+│   ├── webComponentsData.js    # React Web component metadata
+│   └── searchData.js           # Search index with platform filtering
 ├── hooks/
 │   ├── useCopyLink.js          # Clipboard copy hooks
+│   ├── useCodeShowcase.js      # Code display toggle hook
 │   ├── useUtils.js             # Utility hooks (localStorage, etc.)
 │   └── __tests__/              # Hook unit tests
 ├── pages/
@@ -82,13 +87,22 @@ atom-native-docs/
 │   ├── _document.js            # Custom HTML document
 │   ├── 404.js                  # Not found page
 │   ├── 500.js                  # Server error page
-│   ├── index.js                # Home/Introduction page
-│   ├── installation.js         # Installation guide
+│   ├── index.js                # Landing page
+│   ├── search.js               # Search results with platform filter
 │   ├── changelog.js            # Version history
-│   ├── search.js               # Search results page
-│   └── components/             # Component documentation pages
+│   ├── app/                    # React Native docs
+│   │   ├── index.js            # Native introduction
+│   │   ├── installation.js     # Native installation guide
+│   │   └── components/         # Native component pages
+│   └── web/                    # React Web docs
+│       ├── index.js            # Web introduction
+│       ├── installation.js     # Web installation guide
+│       └── components/         # Web component pages
 ├── styles/
 │   └── globals.scss            # Global styles + dark mode
+├── public/
+│   ├── favicon.ico             # Site favicon
+│   └── assets/img/             # Images and logos
 ├── CONTRIBUTING.md             # Contribution guidelines
 ├── jest.config.js              # Jest configuration
 ├── jest.setup.js               # Jest test setup
@@ -100,6 +114,8 @@ atom-native-docs/
 ```
 
 ## 📦 Documented Components
+
+### React Native Components (15)
 
 | Component | Package | npm Link |
 |-----------|---------|----------|
@@ -118,6 +134,23 @@ atom-native-docs/
 | Carousel | @atom-design-mog/moglix-carousel | [npm](https://www.npmjs.com/package/@atom-design-mog/moglix-carousel) |
 | Upload Field | @atom-design-mog/upload-field | [npm](https://www.npmjs.com/package/@atom-design-mog/upload-field) |
 | Login | @atom-design-mog/login | [npm](https://www.npmjs.com/package/@atom-design-mog/login) |
+
+### React Web Components (12+)
+
+| Component | Description | Dependencies |
+|-----------|-------------|--------------|
+| Buttons | Primary, Secondary, Tertiary with icons & states | Tailwind CSS |
+| Cards | Product cards, info cards, stats cards | Tailwind CSS |
+| Table | Sortable tables with fixed actions | @headlessui/react |
+| Form | Inputs, selects, validation | react-hook-form, react-select |
+| Tooltip | Hover tooltips with 4 positions | Tailwind CSS |
+| Tabs & Accordions | Tab navigation, collapsible panels | Tailwind CSS |
+| Datepicker | Date/time picker, range selection | react-datepicker |
+| Carousel | Banner, thumbnail, fullwidth sliders | Swiper |
+| Skeleton | Loading placeholders | Tailwind CSS |
+| Header | Navigation with dropdowns | @headlessui/react |
+| Layout | Responsive grid systems | Tailwind CSS |
+| Form Templates | Multi-step forms, finance forms | react-hook-form, yup |
 
 ## 📝 Updating Component Documentation
 
