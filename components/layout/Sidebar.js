@@ -99,7 +99,7 @@ export default function Sidebar({ isOpen, onClose }) {
         <ul className="list-none p-0 m-0" role="list">
           <li className="px-5 py-3 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider bg-gray-50 dark:bg-gray-800 mt-2 flex items-center justify-between">
             <span>Components</span>
-            <span className={`text-[10px] ${isWebSection ? 'bg-[#0ea5e9]' : 'bg-atom_celticblue dark:bg-blue-600'} text-white px-2 py-0.5 rounded-full font-medium min-w-[20px] text-center`}>
+            <span className={`text-[10px] ${isWebSection ? 'bg-[#0ea5e9]' : 'bg-gradient-to-r from-[#d9232d] to-[#ff6b6b]'} text-white px-2 py-0.5 rounded-full font-medium min-w-[20px] text-center`}>
               {componentItems.length}
             </span>
           </li>
@@ -134,7 +134,7 @@ export default function Sidebar({ isOpen, onClose }) {
         </ul>
 
         {/* Resources Section - Only show for React Native */}
-        {isAppSection && (
+        {/* {isAppSection && (
           <ul className="list-none p-0 m-0 mt-2 mb-8" role="list">
             <li className="px-5 py-3 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider bg-gray-50 dark:bg-gray-800">
               Resources
@@ -152,7 +152,7 @@ export default function Sidebar({ isOpen, onClose }) {
               </a>
             </li>
           </ul>
-        )}
+        )} */}
       </nav>
     </aside>
   );

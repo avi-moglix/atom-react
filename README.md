@@ -154,13 +154,15 @@ atom-native-docs/
 
 ## 📝 Updating Component Documentation
 
-Each component page in `pages/components/` follows a consistent structure. To update a component's documentation:
+### React Native Components (`pages/app/components/`)
+
+Each React Native component page uses the `ComponentDoc` template. To update documentation:
 
 1. **Update `componentMeta`** - Set the correct name, package, version, description, npm URL, and Snack ID
 2. **Update `propsData`** - Add all component props with name, type, default, required, and description
 3. **Update `usageCode`** - Add usage examples
 
-### Expo Snack Integration
+#### Expo Snack Integration
 
 The `SnackEmbed` component uses Expo Snack's embed format. Update the `snackId` in each component page:
 
@@ -170,14 +172,37 @@ const componentMeta = {
 };
 ```
 
-Snack embed format:
-```html
-<div data-snack-id="@avi-moglix/component-name" 
-     data-snack-platform="web" 
-     data-snack-preview="true" 
-     data-snack-theme="light">
-</div>
+You can also specify the platform for the Snack embed:
+```javascript
+<ComponentDoc 
+  componentMeta={componentMeta} 
+  propsData={propsData} 
+  usageCode={usageCode}
+  snackPlatform="android" // Options: "web", "ios", "android", "mydevice"
+/>
 ```
+
+### React Web Components (`pages/web/components/`)
+
+Each React Web component page uses the `ComponentShowcase` component. To update documentation:
+
+1. **Import and configure** - Import components from the respective component library folders
+2. **Create variants array** - Define different states and variations of the component
+3. **Use ComponentShowcase** - Wrap each variant with the `ComponentShowcase` component
+
+```javascript
+<ComponentShowcase
+  title="Button Variant Name"
+  code={`<Button variant="primary">Click me</Button>`}
+>
+  <Button variant="primary">Click me</Button>
+</ComponentShowcase>
+```
+
+The `ComponentShowcase` provides:
+- "View Code" toggle button
+- Syntax-highlighted code display
+- Copy to clipboard functionality
 
 ## 🎨 Customization
 
