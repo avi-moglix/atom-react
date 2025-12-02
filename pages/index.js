@@ -58,7 +58,7 @@ export default function LandingPage() {
             </p>
 
             {/* Platform Selection Cards */}
-            <div className="grid grid-cols-2 sm:grid-cols-1 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {/* React Web Card */}
               <Link href="/web" className="group block">
                 <div className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-full transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:scale-[1.02] hover:shadow-2xl">
@@ -152,7 +152,7 @@ export default function LandingPage() {
 
         {/* Footer */}
         <footer className="p-6 border-t border-white/10">
-          <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-gray-500 text-sm">
+          <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-4 text-gray-500 text-sm">
             <p>© {new Date().getFullYear()} Moglix. Atom Design System.</p>
             {/* <div className="flex items-center gap-6">
               <a href="https://www.npmjs.com/~avi-moglix" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">

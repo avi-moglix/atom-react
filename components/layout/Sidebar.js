@@ -19,7 +19,7 @@ export default function Sidebar({ isOpen, onClose }) {
   return (
     <aside
       id="default-sidebar"
-      className={`fixed bg-white dark:bg-gray-900 top-[var(--header-height)] left-0 z-[999] w-[var(--sidebar-width)] h-[calc(100vh-var(--header-height))] transform transition-transform duration-300 ease-in-out border-r border-gray-200 dark:border-gray-700 ${
+      className={`fixed bg-white dark:bg-gray-900 top-[var(--header-height)] left-0 z-[999] w-[280px] sm:w-[var(--sidebar-width)] h-[calc(100vh-var(--header-height))] transform transition-transform duration-300 ease-in-out border-r border-gray-200 dark:border-gray-700 ${
         isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
       }`}
       aria-label="Sidebar navigation"
@@ -27,13 +27,13 @@ export default function Sidebar({ isOpen, onClose }) {
       {/* Close button for mobile */}
       <button
         onClick={onClose}
-        className="lg:hidden absolute top-4 right-4 p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+        className="lg:hidden absolute top-3 right-3 p-2 z-10 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 shadow-sm"
         aria-label="Close sidebar"
       >
         <i className="ri-close-line text-xl" aria-hidden="true"></i>
       </button>
 
-      <nav className="h-full overflow-y-auto bg-white dark:bg-gray-900">
+      <nav className="h-full overflow-y-auto bg-white dark:bg-gray-900 pb-20">
         {/* Platform Selector */}
         <div className="px-4 py-3 border-b border-gray-200 dark:border-gray-700">
           <div className="flex gap-2">

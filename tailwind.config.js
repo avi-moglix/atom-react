@@ -19,13 +19,12 @@ module.exports = {
       }
     },
     screens: {
-      'sm': { 'min': '300px', 'max': '980px' },
-      'md': { 'min': '981px', 'max': '1239px' },
-      'lg': { 'min': '1240px' },
-      'xl': { 'min': '1600px' },
-      'xxl': { 'min': '1920px' },
-      'mobile': { 'max': '1199px' },
-      'desktop': { 'min': '1200px' },
+      'xs': '380px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
     },
     extend: {
       flex: {
@@ -188,12 +187,15 @@ module.exports = {
         '.container': {
           maxWidth: '100%',
           '@screen sm': {
-            maxWidth: '728px',
+            maxWidth: '640px',
           },
           '@screen md': {
-            maxWidth: '90%',
+            maxWidth: '768px',
           },
           '@screen lg': {
+            maxWidth: '1024px',
+          },
+          '@screen xl': {
             maxWidth: '1280px',
           },         
         }

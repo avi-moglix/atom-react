@@ -161,8 +161,8 @@ export default function Header({ onMenuToggle }) {
           </div>
 
           {/* Search Bar */}
-          <div className="flex items-center flex-1 justify-end lg:justify-center">
-            <div className="w-full max-w-[300px] lg:max-w-[400px] mx-2 lg:mx-4 relative" ref={searchRef}>
+          <div className="flex items-center flex-1 justify-end lg:justify-center min-w-0">
+            <div className="w-full max-w-[180px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[400px] mx-1 sm:mx-2 lg:mx-4 relative" ref={searchRef}>
               <form onSubmit={handleSubmit} role="search" className="relative w-full">
                 <label htmlFor="search-input" className="sr-only">Search components</label>
                 <input
@@ -173,8 +173,8 @@ export default function Header({ onMenuToggle }) {
                   onChange={(e) => handleSearch(e.target.value)}
                   onKeyDown={handleKeyDown}
                   onFocus={() => query && setShowDropdown(true)}
-                  placeholder="Search components..."
-                  className="w-full pl-10 pr-16 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-atom_celticblue bg-white/10 border-white/20 text-white placeholder-gray-400 text-sm"
+                  placeholder="Search..."
+                  className="w-full pl-8 sm:pl-10 pr-3 sm:pr-16 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-atom_celticblue bg-white/10 border-white/20 text-white placeholder-gray-400 text-sm"
                   aria-autocomplete="list"
                   aria-controls="search-results"
                   aria-expanded={showDropdown}
@@ -190,7 +190,7 @@ export default function Header({ onMenuToggle }) {
                   <div 
                     id="search-results"
                     role="listbox"
-                    className="absolute z-50 w-full mt-1 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-lg shadow-lg overflow-hidden"
+                    className="absolute z-50 w-[calc(100vw-2rem)] sm:w-full left-1/2 -translate-x-1/2 sm:left-0 sm:translate-x-0 mt-1 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-lg shadow-lg overflow-hidden max-h-[60vh] overflow-y-auto"
                   >
                     {filteredResults.length > 0 ? (
                       <>

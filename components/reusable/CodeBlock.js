@@ -139,24 +139,24 @@ export function ComponentShowcase({
       className="border border-atom_silver dark:border-gray-700 rounded-lg overflow-hidden mb-5 bg-white dark:bg-gray-800"
     >
       {/* Header */}
-      <div className="px-5 py-4 border-b border-gray-100 dark:border-gray-700 flex items-center justify-between">
-        <div>
-          <h3 className="text-lg font-medium text-atom_onxyblack dark:text-white">
+      <div className="px-3 sm:px-5 py-3 sm:py-4 border-b border-gray-100 dark:border-gray-700 flex items-center justify-between gap-2">
+        <div className="min-w-0 flex-1">
+          <h3 className="text-base sm:text-lg font-medium text-atom_onxyblack dark:text-white truncate">
             {title}
           </h3>
           {description && (
-            <p className="text-sm text-atom_dimgray dark:text-gray-400 mt-1">{description}</p>
+            <p className="text-xs sm:text-sm text-atom_dimgray dark:text-gray-400 mt-1 line-clamp-2">{description}</p>
           )}
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-1 flex-shrink-0">
           {/* Copy Link */}
           <Tooltip message={linkMessage}>
             <button
               onClick={handleCopyLink}
-              className="p-2.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-500 dark:text-gray-400 transition-colors"
+              className="p-2 sm:p-2.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-500 dark:text-gray-400 transition-colors"
               aria-label="Copy link to this section"
             >
-              <i className={`text-lg ${linkMessage === 'Copied!' ? 'ri-check-line text-green-500' : 'ri-link'}`}></i>
+              <i className={`text-base sm:text-lg ${linkMessage === 'Copied!' ? 'ri-check-line text-green-500' : 'ri-link'}`}></i>
             </button>
           </Tooltip>
           
@@ -165,14 +165,14 @@ export function ComponentShowcase({
             <Tooltip message={showCode ? 'Hide code' : 'View code'}>
               <button
                 onClick={() => setShowCode(!showCode)}
-                className={`p-2.5 rounded-full transition-colors ${
+                className={`p-2 sm:p-2.5 rounded-full transition-colors ${
                   showCode 
                     ? 'bg-atom_rojored text-white hover:bg-atom_indianred' 
                     : 'hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-500 dark:text-gray-400'
                 }`}
                 aria-label={showCode ? 'Hide code' : 'View code'}
               >
-                <i className={`text-lg ${showCode ? 'ri-code-s-slash-line' : 'ri-code-line'}`}></i>
+                <i className={`text-base sm:text-lg ${showCode ? 'ri-code-s-slash-line' : 'ri-code-line'}`}></i>
               </button>
             </Tooltip>
           )}
@@ -207,27 +207,27 @@ export function ComponentShowcase({
           {/* Code Content */}
           <div className="relative group bg-[#1e1e1e]">
             {/* Line Numbers */}
-            <div className="absolute left-0 top-0 bottom-0 w-12 bg-[#252526] flex flex-col items-end pr-3 pt-4 text-[#858585] text-xs font-mono select-none border-r border-[#3c3c3c]">
+            <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-12 bg-[#252526] flex flex-col items-end pr-2 sm:pr-3 pt-4 text-[#858585] text-[10px] sm:text-xs font-mono select-none border-r border-[#3c3c3c]">
               {Array.from({ length: lineCount }, (_, i) => (
-                <div key={i} className="leading-6 h-6">{i + 1}</div>
+                <div key={i} className="leading-5 sm:leading-6 h-5 sm:h-6">{i + 1}</div>
               ))}
             </div>
             
-            <pre className="bg-[#1e1e1e] p-4 pl-16 pr-16 overflow-x-auto max-h-[500px] overflow-y-auto text-sm m-0">
+            <pre className="bg-[#1e1e1e] p-3 sm:p-4 pl-10 sm:pl-16 pr-12 sm:pr-16 overflow-x-auto max-h-[400px] sm:max-h-[500px] overflow-y-auto text-xs sm:text-sm m-0">
               <code 
                 dangerouslySetInnerHTML={{ __html: highlightedCode }}
-                className="leading-6 font-mono text-[#d4d4d4] block whitespace-pre"
+                className="leading-5 sm:leading-6 font-mono text-[#d4d4d4] block whitespace-pre"
               />
             </pre>
 
             {/* Copy Button - Always visible */}
-            <div className="absolute top-3 right-3">
+            <div className="absolute top-2 sm:top-3 right-2 sm:right-3">
               <button
                 onClick={handleCopyCode}
-                className="flex items-center gap-1.5 bg-[#3c3c3c] hover:bg-[#505050] text-white px-3 py-1.5 rounded-md text-xs font-medium transition-colors border border-[#5a5a5a]"
+                className="flex items-center gap-1 sm:gap-1.5 bg-[#3c3c3c] hover:bg-[#505050] text-white px-2 sm:px-3 py-1 sm:py-1.5 rounded-md text-[10px] sm:text-xs font-medium transition-colors border border-[#5a5a5a]"
               >
                 <i className={`${copyMessage === 'Copied!' ? 'ri-check-line text-green-400' : 'ri-file-copy-line'}`}></i>
-                {copyMessage}
+                <span className="hidden xs:inline">{copyMessage}</span>
               </button>
             </div>
           </div>
@@ -235,7 +235,7 @@ export function ComponentShowcase({
       )}
 
       {/* Component Preview */}
-      <div className="p-5">
+      <div className="p-3 sm:p-5 overflow-x-auto">
         {children}
       </div>
     </div>

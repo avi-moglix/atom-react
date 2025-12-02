@@ -99,3 +99,4 @@ export function ThemeToggle({ className = '' }) {
 ThemeToggle.propTypes = {
   className: PropTypes.string,
 };
+
