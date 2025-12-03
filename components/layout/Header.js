@@ -245,7 +245,7 @@ export default function Header({ onMenuToggle }) {
               
               {/* NPM Link */}
               <a 
-                href="https://www.npmjs.com/~avi-moglix" 
+                href="https://www.npmjs.com/~moglix" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hidden md:flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm p-2 rounded-lg hover:bg-white/10"

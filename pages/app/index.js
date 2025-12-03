@@ -8,15 +8,17 @@ const components = [
   {
     name: 'Input',
     path: '/app/components/input',
-    package: '@atom-design-mog/input',
+    package: '@atom_design/input',
+    icon: 'ri-input-method-line',
     description: 'Multi-type input component supporting text, select, multiselect, chips, and more.',
     features: ['Text Input', 'Select', 'Multiselect', 'Chips', 'With Button'],
     badge: 'popular'
   },
   {
-    name: 'Buttons',
+    name: 'Button',
     path: '/app/components/buttons',
-    package: '@atom-design-mog/buttons',
+    package: '@atom_design/button',
+    icon: 'ri-cursor-line',
     description: 'Customizable button with variants, sizes, icons, and loading states.',
     features: ['6 Variants', 'Icons', 'Loading State', 'Shapes'],
     badge: 'popular'
@@ -24,7 +26,8 @@ const components = [
   {
     name: 'Search',
     path: '/app/components/search',
-    package: '@atom-design-mog/search',
+    package: '@atom_design/search',
+    icon: 'ri-search-line',
     description: 'Search bar with filter chips and live results list.',
     features: ['Live Search', 'Filter Chips', 'Results List'],
     badge: 'new'
@@ -32,7 +35,8 @@ const components = [
   {
     name: 'Calendar',
     path: '/app/components/calendar',
-    package: '@atom-design-mog/calendar',
+    package: '@atom_design/calendar',
+    icon: 'ri-calendar-line',
     description: 'Calendar component for date selection and display.',
     features: ['Date Selection', 'Customizable'],
     badge: null
@@ -40,7 +44,8 @@ const components = [
   {
     name: 'Datepicker',
     path: '/app/components/datepicker',
-    package: '@atom-design-mog/datepicker',
+    package: '@atom_design/datepicker',
+    icon: 'ri-calendar-check-line',
     description: 'Date picker with customizable formats and ranges.',
     features: ['Date Formats', 'Range Selection'],
     badge: null
@@ -48,7 +53,8 @@ const components = [
   {
     name: 'Dropdown',
     path: '/app/components/dropdown',
-    package: '@atom-design-mog/dropdown',
+    package: '@atom_design/dropdown',
+    icon: 'ri-arrow-down-s-line',
     description: 'Dropdown select component with search support.',
     features: ['Searchable', 'Custom Styles'],
     badge: null
@@ -56,7 +62,8 @@ const components = [
   {
     name: 'Menu',
     path: '/app/components/menu',
-    package: '@atom-design-mog/menu',
+    package: '@atom_design/menu',
+    icon: 'ri-menu-line',
     description: 'Menu navigation component for app navigation.',
     features: ['Navigation', 'Icons'],
     badge: null
@@ -64,7 +71,8 @@ const components = [
   {
     name: 'Controls',
     path: '/app/components/controls',
-    package: '@atom-design-mog/controls',
+    package: '@atom_design/controls',
+    icon: 'ri-toggle-line',
     description: 'Checkbox, radio, switch, and other form controls.',
     features: ['Checkbox', 'Radio', 'Switch'],
     badge: null
@@ -72,15 +80,17 @@ const components = [
   {
     name: 'Tabs',
     path: '/app/components/tabs',
-    package: '@atom-design-mog/tabs',
+    package: '@atom_design/tabs',
+    icon: 'ri-layout-column-line',
     description: 'Tab navigation for content organization.',
     features: ['Tab Navigation', 'Scrollable'],
     badge: null
   },
   {
-    name: 'Accordions',
+    name: 'Accordion',
     path: '/app/components/accordions',
-    package: '@atom-design-mog/accordions',
+    package: '@atom_design/accordion',
+    icon: 'ri-arrow-down-s-fill',
     description: 'Collapsible accordion for expandable content.',
     features: ['Collapsible', 'Animated'],
     badge: null
@@ -88,15 +98,17 @@ const components = [
   {
     name: 'Tooltip',
     path: '/app/components/tooltip',
-    package: '@atom-design-mog/tooltip',
+    package: '@atom_design/tooltip',
+    icon: 'ri-chat-1-line',
     description: 'Tooltip overlay for contextual information.',
     features: ['Overlay', 'Positioning'],
     badge: null
   },
   {
-    name: 'Cards List',
+    name: 'Cardslist',
     path: '/app/components/cardslist',
-    package: '@atom-design-mog/cardslist',
+    package: '@atom_design/cardslist',
+    icon: 'ri-layout-grid-line',
     description: 'Card list layout for displaying item collections.',
     features: ['List Layout', 'Customizable'],
     badge: null
@@ -104,15 +116,17 @@ const components = [
   {
     name: 'Carousel',
     path: '/app/components/carousel',
-    package: '@atom-design-mog/carousel',
+    package: '@atom_design/carousel',
+    icon: 'ri-slideshow-line',
     description: 'Carousel/slider for image and content galleries.',
     features: ['Swipeable', 'Auto-play', 'Pagination'],
     badge: 'popular'
   },
   {
-    name: 'Upload Field',
+    name: 'Upload',
     path: '/app/components/upload-field',
-    package: '@atom-design-mog/upload-field',
+    package: '@atom_design/upload',
+    icon: 'ri-upload-cloud-line',
     description: 'File upload component with preview support.',
     features: ['File Upload', 'Preview'],
     badge: null
@@ -120,7 +134,8 @@ const components = [
   {
     name: 'Login',
     path: '/app/components/login',
-    package: '@atom-design-mog/login',
+    package: '@atom_design/login',
+    icon: 'ri-login-box-line',
     description: 'Login form component with validation.',
     features: ['Form Validation', 'Customizable'],
     badge: null
@@ -176,7 +191,7 @@ export default function AppHome() {
                   Get Started
                 </Link>
                 <a 
-                  href="https://www.npmjs.com/~avi-moglix" 
+                  href="https://www.npmjs.com/~moglix" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="npm-link"
@@ -192,7 +207,7 @@ export default function AppHome() {
           <div className="border border-atom_silver dark:border-gray-700 rounded p-6 mb-6 bg-gradient-to-r from-gray-900 to-gray-800">
             <h3 className="text-white font-semibold mb-3">Quick Install</h3>
             <code className="text-green-400 text-sm">
-              npm install @atom-design-mog/[component-name]
+              npm install @atom_design/[component-name]
             </code>
           </div>
 
@@ -207,7 +222,12 @@ export default function AppHome() {
                 <Link key={index} href={component.path} className="block">
                   <div className="component-card h-full">
                     <div className="flex items-start justify-between mb-2">
-                      <h3>{component.name}</h3>
+                      <div className="flex items-center gap-2">
+                        <div className="w-8 h-8 bg-atom_aliceblue dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
+                          <i className={`${component.icon} text-lg text-atom_celticblue dark:text-blue-400`}></i>
+                        </div>
+                        <h3>{component.name}</h3>
+                      </div>
                       {component.badge && (
                         <span className={`feature-badge ${component.badge}`}>
                           {component.badge === 'new' && <i className="ri-sparkles-line"></i>}

@@ -19,7 +19,7 @@ export default function ServerError() {
           {/* 500 Illustration */}
           <div className="relative mb-8">
             <div className="text-[150px] font-bold text-gray-100 dark:text-gray-800 leading-none select-none">
-              500
+              5&nbsp;&nbsp;&nbsp;0
             </div>
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-24 h-24 bg-atom_mistyrose dark:bg-red-900/30 rounded-full flex items-center justify-center">
@@ -55,7 +55,7 @@ export default function ServerError() {
           </div>
           
           {/* Status Info */}
-          <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+          {/* <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
             <p className="text-sm text-gray-500 dark:text-gray-400">
               If this problem continues, please{' '}
               <a 
@@ -68,15 +68,9 @@ export default function ServerError() {
               </a>
               .
             </p>
-          </div>
+          </div> */}
         </div>
       </main>
     </>
   );
 }
-
-// Get initial props for proper 500 status code
-ServerError.getInitialProps = ({ res, err }) => {
-  const statusCode = res ? res.statusCode : err ? err.statusCode : 500;
-  return { statusCode };
-};

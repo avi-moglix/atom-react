@@ -30,7 +30,7 @@ export default function LandingPage() {
             </div>
             <div className="flex items-center gap-4">
               <a 
-                href="https://www.npmjs.com/~avi-moglix" 
+                href="https://www.npmjs.com/~moglix" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors"
@@ -155,7 +155,7 @@ export default function LandingPage() {
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-4 text-gray-500 text-sm">
             <p>© {new Date().getFullYear()} Moglix. Atom Design System.</p>
             {/* <div className="flex items-center gap-6">
-              <a href="https://www.npmjs.com/~avi-moglix" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+              <a href="https://www.npmjs.com/~moglix" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 npm Packages
               </a>
               <a href="/app/installation" className="hover:text-white transition-colors">

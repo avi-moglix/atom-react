@@ -183,7 +183,7 @@ export default function Changelog() {
                 Follow our npm packages to get notified of new releases.
               </p>
               <a
-                href="https://www.npmjs.com/~avi-moglix"
+                href="https://www.npmjs.com/~moglix"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-atom_rojored text-white px-4 py-2 rounded-md font-medium hover:bg-red-700 transition-colors"

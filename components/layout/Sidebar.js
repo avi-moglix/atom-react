@@ -141,7 +141,7 @@ export default function Sidebar({ isOpen, onClose }) {
             </li>
             <li>
               <a
-                href="https://www.npmjs.com/~avi-moglix"
+                href="https://www.npmjs.com/~moglix"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="no-underline text-gray-700 dark:text-gray-300 text-sm leading-[21px] px-5 py-2.5 h-10 flex items-center gap-2 box-border hover:bg-gray-50 dark:hover:bg-gray-800"

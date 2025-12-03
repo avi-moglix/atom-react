@@ -13,7 +13,7 @@ export default function WebHome() {
   // Get available components from webComponentsData
   const availableComponents = [
     { name: 'Buttons', path: '/web/components/button', description: 'Primary, secondary, tertiary buttons with multiple sizes and states', icon: 'ri-cursor-line' },
-    { name: 'Cards', path: '/web/components/cards', description: 'Product cards, info cards, stats cards, and horizontal cards', icon: 'ri-layout-cards-line' },
+    { name: 'Cards', path: '/web/components/cards', description: 'Product cards, info cards, stats cards, and horizontal cards', icon: 'ri-layout-line' },
     { name: 'Table', path: '/web/components/table', description: 'Data tables with sorting, selection, and action menus', icon: 'ri-table-line' },
     { name: 'Form', path: '/web/components/form', description: 'Inputs, selects, checkboxes, radios, and validation', icon: 'ri-input-method-line' },
     { name: 'Tooltip', path: '/web/components/tooltip', description: 'Hover tooltips with 4 position options', icon: 'ri-message-2-line' },

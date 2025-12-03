@@ -12,8 +12,8 @@ export default function Installation() {
 
   const basicUsageCode = `import React from 'react';
 import { View } from 'react-native';
-import AButton from '@atom-design-mog/buttons';
-import Input from '@atom-design-mog/input';
+import Button from '@atom_design/button';
+import Input from '@atom_design/input';
 
 export default function MyScreen() {
   const [value, setValue] = React.useState('');
@@ -78,7 +78,7 @@ export default function MyScreen() {
             <div>
               <h4 className="font-semibold mb-2 dark:text-white">Using npm:</h4>
               <CodeBlock 
-                code="npm install @atom-design-mog/buttons @atom-design-mog/input" 
+                code="npm install @atom_design/button @atom_design/input" 
                 language="bash"
               />
             </div>
@@ -86,7 +86,7 @@ export default function MyScreen() {
             <div>
               <h4 className="font-semibold mb-2 dark:text-white">Using yarn:</h4>
               <CodeBlock 
-                code="yarn add @atom-design-mog/buttons @atom-design-mog/input" 
+                code="yarn add @atom_design/button @atom_design/input" 
                 language="bash"
               />
             </div>
@@ -113,22 +113,22 @@ export default function MyScreen() {
               </thead>
               <tbody>
                 <tr>
-                  <td><code className="text-atom_rojored">@atom-design-mog/buttons</code></td>
+                  <td><code className="text-atom_rojored">@atom_design/button</code></td>
                   <td><code>react-native-vector-icons</code></td>
                   <td><code className="text-xs">npm i react-native-vector-icons</code></td>
                 </tr>
                 <tr>
-                  <td><code className="text-atom_rojored">@atom-design-mog/calendar</code></td>
+                  <td><code className="text-atom_rojored">@atom_design/calendar</code></td>
                   <td><code>react-native-calendars</code></td>
                   <td><code className="text-xs">npm i react-native-calendars</code></td>
                 </tr>
                 <tr>
-                  <td><code className="text-atom_rojored">@atom-design-mog/datepicker</code></td>
+                  <td><code className="text-atom_rojored">@atom_design/datepicker</code></td>
                   <td><code>@react-native-community/datetimepicker</code></td>
                   <td><code className="text-xs">npm i @react-native-community/datetimepicker</code></td>
                 </tr>
                 <tr>
-                  <td><code className="text-atom_rojored">@atom-design-mog/upload-field</code></td>
+                  <td><code className="text-atom_rojored">@atom_design/upload</code></td>
                   <td><code>react-native-image-picker</code>, <code>react-native-progress</code></td>
                   <td><code className="text-xs">npm i react-native-image-picker react-native-progress</code></td>
                 </tr>
@@ -172,21 +172,21 @@ export default function MyScreen() {
           
           <div className="grid grid-cols-2 gap-3">
             {[
-              '@atom-design-mog/buttons',
-              '@atom-design-mog/input',
-              '@atom-design-mog/search',
-              '@atom-design-mog/calendar',
-              '@atom-design-mog/datepicker',
-              '@atom-design-mog/dropdown',
-              '@atom-design-mog/menu',
-              '@atom-design-mog/controls',
-              '@atom-design-mog/tabs',
-              '@atom-design-mog/accordions',
-              '@atom-design-mog/tooltip',
-              '@atom-design-mog/cardslist',
-              '@atom-design-mog/moglix-carousel',
-              '@atom-design-mog/upload-field',
-              '@atom-design-mog/login',
+              '@atom_design/button',
+              '@atom_design/accordion',
+              '@atom_design/tabs',
+              '@atom_design/tooltip',
+              '@atom_design/carousel',
+              '@atom_design/cardslist',
+              '@atom_design/input',
+              '@atom_design/upload',
+              '@atom_design/menu',
+              '@atom_design/dropdown',
+              '@atom_design/controls',
+              '@atom_design/datepicker',
+              '@atom_design/login',
+              '@atom_design/calendar',
+              '@atom_design/search',
             ].map((pkg, i) => (
               <div key={i} className="bg-gray-50 dark:bg-gray-800 rounded p-3 flex items-center justify-between">
                 <code className="text-sm text-atom_celticblue dark:text-blue-400">{pkg}</code>
